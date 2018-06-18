@@ -51,7 +51,8 @@ def main():
     updater.dispatcher.add_handler(CommandHandler('help', help))
     updater.dispatcher.add_error_handler(error)
 
-    updater.dispatcher.add_handler(CommandHandler('open', help))
+    #comandos para Tickets MB
+    updater.dispatcher.add_handler(CommandHandler('open', open))
 
     # Start the Bot
     updater.start_polling()
